@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ExámenParcial2.Views.LoginPage2"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Encuestas">
+    <StackLayout>
+        <StackLayout Padding="40" Spacing="30">
+            <Entry
+                x:Name="EmailEntry"
+                HorizontalOptions="Center"
+                Keyboard="Email"
+                Placeholder="Email"
+                PlaceholderColor="Gray"
+                Text="{Binding Usuario}"
+                TextColor="Black"
+                WidthRequest="333" />
+            <Entry
+                x:Name="PasswordEntry"
+                HorizontalOptions="Center"
+                IsPassword="True"
+                Placeholder="Contraseña"
+                PlaceholderColor="Gray"
+                Text="{Binding Contraseña}"
+                TextColor="Black"
+                WidthRequest="333" />
+            <Button
+                x:Name="LoginBtn"
+                Command="{Binding LoginCommand}"
+                Text="Iniciar sesión" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

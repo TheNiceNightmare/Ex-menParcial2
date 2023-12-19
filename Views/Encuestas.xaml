@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExámenParcial2.Views.Encuestas"
+             Title="Encuestas">
+    <StackLayout>
+        <Label HorizontalOptions="StartAndExpand" Text="{Binding Suma}" />
+        <Entry x:Name="TaskNameEntry" 
+               Placeholder="Ingrese la respuesta" 
+               Text="{Binding Suma.TaskName}" />
+        <Entry x:Name="StatusEntry" 
+               Placeholder="Ingrese la respuesta" 
+               Text="{Binding ValorPi.Status}" />
+        <Entry x:Name="StatusEntry" 
+       Placeholder="Ingrese la respuesta" 
+       Text="{Binding ValorPi.Status}" />
+        <Button x:Name="ConfirmarBtn" 
+                Clicked="ConfirmarBtn_Clicked" 
+                Text="Confirmar" />
+    </StackLayout>
+</ContentPage>
